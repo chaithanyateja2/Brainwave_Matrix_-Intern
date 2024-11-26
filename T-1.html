@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager with Timer</title>
+    <link rel="stylesheet" href="T-1.css">
+</head>
+<body>
+
+    <div id="task-container">
+        <h2>Task Manager with Timer</h2>
+        <input type="text" id="task-input" placeholder="Enter a new task..." />
+        <label for="add-timer">Add Timer</label>
+        <input type="checkbox" id="add-timer" />
+        
+        <div id="timer-settings">
+            <div class="timer-field">
+                <input type="number" id="hours" placeholder="00" disabled />
+                <label for="hours">Hours</label>
+            </div>
+            <div class="timer-field">
+                <input type="number" id="minutes" placeholder="00" disabled />
+                <label for="minutes">Minutes</label>
+            </div>
+            <div class="timer-field">
+                <input type="number" id="seconds" placeholder="00" disabled />
+                <label for="seconds">Seconds</label>
+            </div>
+        </div>
+
+        <button id="add-task">Add Task</button>
+
+        <div id="task-list"></div>
+    </div>
+
+    <script src="T-1.js"></script>
+</body>
+</html>
