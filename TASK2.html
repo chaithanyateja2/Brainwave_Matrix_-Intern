@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Starbucks Clone</title>
+  <link rel="stylesheet" href="TASK2.css">
+</head>
+<body>
+
+ 
+  <header class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="Starbucks Logo">
+      <h1>Starbucks</h1>
+    </div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Order</a>
+      <a href="#">Store</a>
+      <a href="#">Contact</a>
+    </div>
+    <div class="nav-right">
+      <input type="text" class="search" placeholder="Search for specific item">
+      <div class="profile">
+        <img src="profile.jpg" alt="Profile" class="profile-icon">
+        <span class="profile-name">Profile</span>
+        <div class="dropdown">
+          <button class="dropbtn">Login/Signup</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="ad-banner">
+    <div class="floating-banner">
+      <div class="banner-content">
+        <h1 class="discount-text">50% OFF</h1>
+        <p>Enjoy our Christmas Specials!</p>
+        <button class="shop-now-btn">Shop Now</button>
+      </div>
+    </div>
+  </section>
+  
+  
+  <section class="categories">
+    <div class="category" onclick="toggleCategory('best-sellers')" style="background-image: url('image10.jpg');">
+      <h3>Best Sellers</h3>
+    </div>
+    <div class="category" onclick="toggleCategory('drinks')" style="background-image: url('image1.webp');">
+      <h3>Drinks</h3>
+    </div>
+    <div class="category" onclick="toggleCategory('food')" style="background-image: url('food1.avif');">
+      <h3>Food</h3>
+    </div>
+    <div class="category" onclick="toggleCategory('ready-to-eat')" style="background-image: url('rte4.png');">
+      <h3>Ready to Eat</h3>
+    </div>
+  </section>
+  
+  <div id="item-list" class="item-list"></div>
+  
+  
+
+  
+  <section id="item-list" class="item-list">
+  
+  </section>
+
+ 
+  <section class="history">
+    <div class="history-card">
+      <div class="history-image">
+        <img src="Coffee history.webp" alt="Journey of Coffee">
+      </div>
+      <div class="history-content">
+        <h2>The Journey of Coffee</h2>
+        <p>
+Coffee's origins trace back to 9th-century Ethiopia, where a goatherd named Kaldi noticed his goats becoming energized after eating red berries from a specific plant. These berries made their way to Yemen, where Sufi monks brewed them into a drink that fueled their prayers. By the 15th century, coffee spread across the Arabian Peninsula, later captivating Europe in the 17th century. Its unique aroma and stimulating effects soon revolutionized trade and culture, leading to coffeehouses becoming centers of social and intellectual exchange. Today, coffee remains a beloved global tradition, symbolizing connection and comfort. </p>
+      </div>
+    </div>
+    <div class="history-card">
+      <div class="history-image">
+        <img src="Starbucks history.webp" alt="Story of Starbucks">
+      </div>
+      <div class="history-content">
+        <h2>The Story of Starbucks</h2>
+        <p>
+          Starbucks was founded in 1971 in Seattle's Pike Place Market by three partners: Jerry Baldwin, Zev Siegl, and Gordon Bowker. Initially, it focused on selling high-quality coffee beans and equipment rather than brewed coffee. Inspired by the maritime culture of Seattle, the founders chose the name "Starbucks" from Moby Dick and adopted a mermaid logo symbolizing the allure of the sea. Over time, under Howard Schultz's leadership, Starbucks evolved into a global coffeehouse phenomenon, redefining the coffee experience and becoming a cultural icon.</p>
+      </div>
+    </div>
+  </section>
+  
+  
+
+ 
+  <section class="contact-feedback">
+    <h2>Contact Us & Feedback</h2>
+    <div class="contact-info">
+      <p>Email: contact@starbucks.com</p>
+      <p>Phone: 123-456-7890</p>
+    </div>
+    <form id="feedback-form">
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Enter your email">
+      <label for="phone">Phone:</label>
+      <input type="text" id="phone" placeholder="Enter your phone number">
+      <label for="rating">Rating:</label>
+      <select id="rating">
+        <option value="5">5 Stars</option>
+        <option value="4">4 Stars</option>
+        <option value="3">3 Stars</option>
+        <option value="2">2 Stars</option>
+        <option value="1">1 Star</option>
+      </select>
+      <label for="comment">Comment:</label>
+      <textarea id="comment" placeholder="Your feedback..."></textarea>
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </section>
+
+  <script src="TASK2.js"></script>
+</body>
+</html>
